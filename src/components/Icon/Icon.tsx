@@ -12,7 +12,7 @@ export const Icon: React.FC<IconProps> = ({
 }): JSX.Element => {
   return (
     <svg className={className} height={size} width={size}>
-      <use href={Icons + "#icon-" + id}></use>
+      <use xlinkHref={Icons + "#icon-" + id}></use>
     </svg>
   );
 };

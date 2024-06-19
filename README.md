@@ -1,7 +1,7 @@
  <h1>Books Store</h1>
 
 <h2>A single page Books store website.</h2>
-
+<img src="./src/assets/images/site-img.png" alt="Photo of project"/>
  <h1>About project</h1>
 </h2>
 <h3>Done:</h3>
