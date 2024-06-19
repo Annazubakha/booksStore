@@ -1,68 +1,87 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
+  background-color: var(--main-bg);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--my-white);
+  width: 100%;
+  height: 100vh;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
-
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+}
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: none;
+  border: none;
+  transition: background-color 250ms ease;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.container {
+  margin: 0 auto;
+  padding: 0 32px;
+  max-width: 1280px;
+}
+
+:root {
+  --my-white: #ffffff;
+  --header-bg: rgb(124, 19, 235);
+  --main-bg: #cc99f5;
+  --error-color: rgb(213, 77, 77);
+}
+
+caption {
+  margin: 20px 0;
+  font-size: 36px;
+}
+
+table,
+th,
+td {
+  border: 1px solid var(--header-bg);
+  text-align: center;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+tr:hover,
+tr:focus {
+  background-color: var(--header-bg);
+  cursor: pointer;
+}
+
+.btn_delete {
+  fill: var(--my-white);
+  background-color: transparent;
+  transition: fill 250ms ease;
+}
+
+.btn_delete:hover,
+.btn_delete:focus {
+  fill: var(--main-bg);
+}
+
+input {
+  cursor: pointer;
 }

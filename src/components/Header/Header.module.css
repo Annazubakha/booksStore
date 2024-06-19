@@ -1,0 +1,36 @@
+.wrapper {
+  background-color: var(--header-bg);
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper_inside {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon {
+  fill: var(--my-white);
+  stroke: var(--my-white);
+}
+
+.title {
+  font-size: 48px;
+}
+
+.btn_add {
+  font-size: 24px;
+  width: 200px;
+  height: 40px;
+  border-radius: 16px;
+  color: var(--header-bg);
+}
+
+.btn_add:hover,
+.btn_add:focus {
+  color: white;
+  background-color: var(--main-bg);
+}

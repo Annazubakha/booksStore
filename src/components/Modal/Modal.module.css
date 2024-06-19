@@ -1,0 +1,44 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1501;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(21, 21, 21, 0.5);
+}
+
+.content {
+  position: relative;
+  background-color: var(--my-white);
+  color: var(--main-bg);
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 48px;
+  border-radius: 30px;
+}
+
+.closeModalBtn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.icon {
+  fill: var(--main-bg);
+}
